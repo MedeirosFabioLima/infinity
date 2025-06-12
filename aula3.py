@@ -89,21 +89,31 @@
 # exibindo apenas os números ímpares.
 
 
-import time
-limite = int(input('digite um numero:'))
-contador = 1
-while contador <= limite:
-    if contador % 2 != 0:
-        print(contador)
-        time.sleep(0.5)
-    contador += 1
-print("Fim")
+# import time
+# limite = int(input('digite um numero:'))
+# contador = 1
+# while contador <= limite:
+#     if contador % 2 != 0:
+#         print(contador)
+#         time.sleep(0.5)
+#     contador += 1
+# print("Fim")
 
 # Atividade 06:
 # Soma de Números Positivos:
 # Escreva um programa que solicite números ao usuário até
 # que ele digite um número negativo, somando apenas os
 # números positivos inseridos.
+
+soma = 0
+while True:
+    numero = int(input('Digite um número: '))
+    if numero % 2 != 0:
+        break
+    soma += numero
+print(f'A soma dos números positivos é: {soma}')
+
+
 
 # Atividade 07:
 # Tabuada com Condicional:
