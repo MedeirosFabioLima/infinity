@@ -65,6 +65,21 @@
 # uma contagem regressiva de 10 até 1 e, em seguida, exiba
 # "Feliz Ano Novo!".
 
+import time
+
+contador = 10 
+
+while contador >= 1:
+    print(contador)
+    time.sleep(1)
+    contador-=1 
+print("Feliz Ano Novo!")
+    
+
+    
+
+
+
 # ATIVIDADE PRÁTICA
 
 # Atividade 05:
