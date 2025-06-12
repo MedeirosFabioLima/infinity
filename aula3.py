@@ -65,15 +65,15 @@
 # uma contagem regressiva de 10 até 1 e, em seguida, exiba
 # "Feliz Ano Novo!".
 
-import time
+# import time
 
-contador = 10 
+# contador = 10 
 
-while contador >= 1:
-    print(contador)
-    time.sleep(1)
-    contador-=1 
-print("Feliz Ano Novo!")
+# while contador >= 1:
+#     print(contador)
+#     time.sleep(1)
+#     contador-=1 
+# print("Feliz Ano Novo!")
     
 
     
@@ -87,6 +87,17 @@ print("Feliz Ano Novo!")
 # Crie um programa que solicite um número ao usuário e use
 # um laço while para contar de 1 até o número inserido,
 # exibindo apenas os números ímpares.
+
+
+import time
+limite = int(input('digite um numero:'))
+contador = 1
+while contador <= limite:
+    if contador % 2 != 0:
+        print(contador)
+        time.sleep(0.5)
+    contador += 1
+print("Fim")
 
 # Atividade 06:
 # Soma de Números Positivos:
