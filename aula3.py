@@ -144,26 +144,29 @@
 # que o usuário digite -1. Calcule e exiba a média das notas
 # inseridas.
 
-# Inicializa as variáveis
-soma = 0
-quantidade = 0
 
-# Solicita notas até que o usuário digite -1
-while True:
-    nota = float(input("Digite a nota do aluno (ou -1 para encerrar): "))
+
+# # Inicializa as variáveis
+# soma = 0
+# quantidade = 0
+
+# # Solicita notas até que o usuário digite -1
+# while True:
+#     nota = float(input("Digite a nota do aluno (ou -1 para encerrar): "))
     
-    if nota == -1:
-        break  # Encerra o loop se o usuário digitar -1
+#     if nota == -1:
+#         break  # Encerra o loop se o usuário digitar -1
 
-    soma += nota
-    quantidade += 1
+#     soma += nota
+#     quantidade += 1
 
-# Verifica se alguma nota foi inserida
-if quantidade > 0:
-    media = soma / quantidade
-    print(f"Média das notas: {media:.2f}")
-else:
-    print("Nenhuma nota foi inserida.")
+# # Verifica se alguma nota foi inserida
+# if quantidade > 0:
+#     media = soma / quantidade
+#     print(f"Média das notas: {media:.2f}")
+# else:
+#     print("Nenhuma nota foi inserida.")
+
 
 
 # Atividade 09:
@@ -171,11 +174,11 @@ else:
 # Crie um programa que use um laço while para contar de 1 a 10
 # e termine quando atingir 10.
 
-# contador = 1
+contador = 1
 
-# while contador <= 10:
-#     print(contador)
-#     contador += 1  # Incrementa o contador a cada repetição
+while contador <= 10:
+    print(contador)
+    contador += 1  # Incrementa o contador a cada repetição
 
 
 
