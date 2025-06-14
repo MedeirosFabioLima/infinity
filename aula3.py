@@ -105,13 +105,13 @@
 # que ele digite um número negativo, somando apenas os
 # números positivos inseridos.
 
-soma = 0
-while True:
-    numero = int(input('Digite um número: '))
-    if numero % 2 != 0:
-        break
-    soma += numero
-print(f'A soma dos números positivos é: {soma}')
+# soma = 0
+# while True:
+#     numero = int(input('Digite um número: '))
+#     if numero % 2 != 0:
+#         break
+#     soma += numero
+# print(f'A soma dos números positivos é: {soma}')
 
 
 
@@ -121,16 +121,66 @@ print(f'A soma dos números positivos é: {soma}')
 # um laço while para exibir a tabuada desse número (de 1 a 10),
 # mas apenas para os resultados que forem múltiplos de 3.
 
+# Solicita um número ao usuário
+numero = int(input("Digite um número para ver a tabuada (somente os múltiplos de 3): "))
+
+# Inicializa o contador
+contador = 1
+
+# Laço while para gerar a tabuada até 10
+while contador <= 10:
+    resultado = numero * contador
+    # Verifica se o resultado é múltiplo de 3
+    if resultado % 3 == 0:
+        print(f"{numero} x {contador} = {resultado}")
+    contador += 1
+
+
+
+
 # Atividade 08:
 # Média de Notas:
 # Desenvolva um programa que solicite as notas dos alunos até
 # que o usuário digite -1. Calcule e exiba a média das notas
 # inseridas.
 
+# # Inicializa as variáveis
+# soma = 0
+# quantidade = 0
+
+# # Solicita notas até que o usuário digite -1
+# while True:
+#     nota = float(input("Digite a nota do aluno (ou -1 para encerrar): "))
+    
+#     if nota == -1:
+#         break  # Encerra o loop se o usuário digitar -1
+
+#     soma += nota
+#     quantidade += 1
+
+# # Verifica se alguma nota foi inserida
+# if quantidade > 0:
+#     media = soma / quantidade
+#     print(f"Média das notas: {media:.2f}")
+# else:
+#     print("Nenhuma nota foi inserida.")
+
+
 # Atividade 09:
 # Contagem até 10:
 # Crie um programa que use um laço while para contar de 1 a 10
 # e termine quando atingir 10.
+
+# contador = 1
+
+# while contador <= 10:
+#     print(contador)
+#     contador += 1  # Incrementa o contador a cada repetição
+
+
+
+
+# Atividade 10:
 
 # Escreva um programa que use um laço while para somar
 # números consecutivos começando de 1 e termine quando
@@ -138,16 +188,57 @@ print(f'A soma dos números positivos é: {soma}')
 # Atividade 10:
 # Soma até 50:
 
+
+# soma = 0
+# numero = 1
+
+# while soma < 50:
+#     soma += numero
+#     print(f"Adicionando {numero}, soma atual: {soma}")
+#     numero += 1
+
+# print("\nA soma final atingiu ou ultrapassou 50.")
+
+
+
 # Atividade 11:
 # Entrada Válida:
 # Crie um programa que solicite ao usuário um número entre 1 e 10.
 # Continue pedindo até que o usuário forneça um valor válido.
 
+# # Solicita um número entre 1 e 10 até o usuário digitar corretamente
+# numero = int(input("Digite um número entre 1 e 10: "))
+
+# while numero < 1 or numero > 10:
+#     print("Número inválido. Tente novamente.")
+#     numero = int(input("Digite um número entre 1 e 10: "))
+
+# print(f"Você digitou o número válido: {numero}")
+
+
+
+# Atividade 12:
 # Desenvolva um programa que peça ao usuário para digitar uma
 # senha e continue pedindo até que a senha correta (previamente
 # definida) seja inserida.
 # Atividade 12:
 # Senha Correta:
+
+
+# # Senha previamente definida
+# senha_correta="130683"
+
+# # Solicita a senha ao usuário
+# senha = input("Digite a senha:")
+
+# # Continua pedindo até que a senha correta seja digitada
+# while senha != senha_correta:
+#     print("Senha incorreta. Tente novamente.")
+#     senha = input("Digite a senha:")
+
+# print("Acesso permitido. Senha correta!")
+
+
 
 
 
