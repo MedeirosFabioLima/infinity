@@ -121,19 +121,19 @@
 # um laço while para exibir a tabuada desse número (de 1 a 10),
 # mas apenas para os resultados que forem múltiplos de 3.
 
-# Solicita um número ao usuário
-numero = int(input("Digite um número para ver a tabuada (somente os múltiplos de 3): "))
+# # Solicita um número ao usuário
+# numero = int(input("Digite um número para ver a tabuada (somente os múltiplos de 3): "))
 
-# Inicializa o contador
-contador = 1
+# # Inicializa o contador
+# contador = 1
 
-# Laço while para gerar a tabuada até 10
-while contador <= 10:
-    resultado = numero * contador
-    # Verifica se o resultado é múltiplo de 3
-    if resultado % 3 == 0:
-        print(f"{numero} x {contador} = {resultado}")
-    contador += 1
+# # Laço while para gerar a tabuada até 10
+# while contador <= 10:
+#     resultado = numero * contador
+#     # Verifica se o resultado é múltiplo de 3
+#     if resultado % 3 == 0:
+#         print(f"{numero} x {contador} = {resultado}")
+#     contador += 1
 
 
 
@@ -192,15 +192,15 @@ while contador <= 10:
 # Soma até 50:
 
 
-soma = 0
-numero = 1
+# soma = 0
+# numero = 1
 
-while soma < 50:
-    soma += numero
-    print(f"Adicionando {numero}, soma atual: {soma}")
-    numero += 1
+# while soma < 50:
+#     soma += numero
+#     print(f"Adicionando {numero}, soma atual: {soma}")
+#     numero += 1
 
-print("\nA soma final atingiu ou ultrapassou 50.")
+# print("\nA soma final atingiu ou ultrapassou 50.")
 
 
 
@@ -209,14 +209,14 @@ print("\nA soma final atingiu ou ultrapassou 50.")
 # Crie um programa que solicite ao usuário um número entre 1 e 10.
 # Continue pedindo até que o usuário forneça um valor válido.
 
-# Solicita um número entre 1 e 10 até o usuário digitar corretamente
-numero = int(input("Digite um número entre 1 e 10: "))
+# # Solicita um número entre 1 e 10 até o usuário digitar corretamente
+# numero = int(input("Digite um número entre 1 e 10: "))
 
-while numero < 1 or numero > 10:
-    print("Número inválido. Tente novamente.")
-    numero = int(input("Digite um número entre 1 e 10: "))
+# while numero < 1 or numero > 10:
+#     print("Número inválido. Tente novamente.")
+#     numero = int(input("Digite um número entre 1 e 10: "))
 
-print(f"Você digitou o número válido: {numero}")
+# print(f"Você digitou o número válido: {numero}")
 
 
 
@@ -228,18 +228,18 @@ print(f"Você digitou o número válido: {numero}")
 # Senha Correta:
 
 
-# Senha previamente definida
-senha_correta="130683"
+# # Senha previamente definida
+# senha_correta="130683"
 
-# Solicita a senha ao usuário
-senha = input("Digite a senha:")
+# # Solicita a senha ao usuário
+# senha = input("Digite a senha:")
 
-# Continua pedindo até que a senha correta seja digitada
-while senha != senha_correta:
-    print("Senha incorreta. Tente novamente.")
-    senha = input("Digite a senha:")
+# # Continua pedindo até que a senha correta seja digitada
+# while senha != senha_correta:
+#     print("Senha incorreta. Tente novamente.")
+#     senha = input("Digite a senha:")
 
-print("Acesso permitido. Senha correta!")
+# print("Acesso permitido. Senha correta!")
 
 
 
