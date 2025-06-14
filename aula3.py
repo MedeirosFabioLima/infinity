@@ -121,19 +121,19 @@
 # um laço while para exibir a tabuada desse número (de 1 a 10),
 # mas apenas para os resultados que forem múltiplos de 3.
 
-# Solicita um número ao usuário
-numero = int(input("Digite um número para ver a tabuada (somente os múltiplos de 3): "))
+# # Solicita um número ao usuário
+# numero = int(input("Digite um número para ver a tabuada (somente os múltiplos de 3): "))
 
-# Inicializa o contador
-contador = 1
+# # Inicializa o contador
+# contador = 1
 
-# Laço while para gerar a tabuada até 10
-while contador <= 10:
-    resultado = numero * contador
-    # Verifica se o resultado é múltiplo de 3
-    if resultado % 3 == 0:
-        print(f"{numero} x {contador} = {resultado}")
-    contador += 1
+# # Laço while para gerar a tabuada até 10
+# while contador <= 10:
+#     resultado = numero * contador
+#     # Verifica se o resultado é múltiplo de 3
+#     if resultado % 3 == 0:
+#         print(f"{numero} x {contador} = {resultado}")
+#     contador += 1
 
 
 
@@ -144,26 +144,26 @@ while contador <= 10:
 # que o usuário digite -1. Calcule e exiba a média das notas
 # inseridas.
 
-# # Inicializa as variáveis
-# soma = 0
-# quantidade = 0
+# Inicializa as variáveis
+soma = 0
+quantidade = 0
 
-# # Solicita notas até que o usuário digite -1
-# while True:
-#     nota = float(input("Digite a nota do aluno (ou -1 para encerrar): "))
+# Solicita notas até que o usuário digite -1
+while True:
+    nota = float(input("Digite a nota do aluno (ou -1 para encerrar): "))
     
-#     if nota == -1:
-#         break  # Encerra o loop se o usuário digitar -1
+    if nota == -1:
+        break  # Encerra o loop se o usuário digitar -1
 
-#     soma += nota
-#     quantidade += 1
+    soma += nota
+    quantidade += 1
 
-# # Verifica se alguma nota foi inserida
-# if quantidade > 0:
-#     media = soma / quantidade
-#     print(f"Média das notas: {media:.2f}")
-# else:
-#     print("Nenhuma nota foi inserida.")
+# Verifica se alguma nota foi inserida
+if quantidade > 0:
+    media = soma / quantidade
+    print(f"Média das notas: {media:.2f}")
+else:
+    print("Nenhuma nota foi inserida.")
 
 
 # Atividade 09:
