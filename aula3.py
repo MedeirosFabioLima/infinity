@@ -121,19 +121,19 @@
 # um laço while para exibir a tabuada desse número (de 1 a 10),
 # mas apenas para os resultados que forem múltiplos de 3.
 
-# # Solicita um número ao usuário
-# numero = int(input("Digite um número para ver a tabuada (somente os múltiplos de 3): "))
+# Solicita um número ao usuário
+numero = int(input("Digite um número para ver a tabuada (somente os múltiplos de 3): "))
 
-# # Inicializa o contador
-# contador = 1
+# Inicializa o contador
+contador = 1
 
-# # Laço while para gerar a tabuada até 10
-# while contador <= 10:
-#     resultado = numero * contador
-#     # Verifica se o resultado é múltiplo de 3
-#     if resultado % 3 == 0:
-#         print(f"{numero} x {contador} = {resultado}")
-#     contador += 1
+# Laço while para gerar a tabuada até 10
+while contador <= 10:
+    resultado = numero * contador
+    # Verifica se o resultado é múltiplo de 3
+    if resultado % 3 == 0:
+        print(f"{numero} x {contador} = {resultado}")
+    contador += 1
 
 
 
@@ -174,11 +174,11 @@
 # Crie um programa que use um laço while para contar de 1 a 10
 # e termine quando atingir 10.
 
-contador = 1
+# contador = 1
 
-while contador <= 10:
-    print(contador)
-    contador += 1  # Incrementa o contador a cada repetição
+# while contador <= 10:
+#     print(contador)
+#     contador += 1  # Incrementa o contador a cada repetição
 
 
 
