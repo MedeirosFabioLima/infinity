@@ -253,5 +253,117 @@
 
 
 
+
+
+ # Imprimir números de 1 a 5 com while
+# contador = 1
+
+# while contador <= 5:
+#     print(contador)
+#     contador += 1
+
+#     # Imprimir números de 1 a 5 com for
+# for numero in range(1, 6):
+#     print(numero)
+
+
+# nomes = ["Ana", "Bruno", "Carlos", "Diana"]
+
+# for nome in nomes:
+#     print("Olá,", nome)
+
+nomes = ["Ana", "Bruno", "Carlos", "Diana"]
+indice = 0
+
+while indice < len(nomes):
+    print("Olá,", nomes[indice])
+    indice += 1
+
+
+
+
+tarefas = ["Estudar Python", "Fazer exercícios", "Ler um livro", "Beber água"]
+
+print("=== Lista de Tarefas ===")
+while tarefas:
+    print("\nTarefa atual:", tarefas[0])
+    resposta = input("Você já concluiu essa tarefa? (s/n): ")
+
+    if resposta.lower() == 's':
+        tarefa_concluida = tarefas.pop(0)
+        print(f"✅ Tarefa '{tarefa_concluida}' marcada como concluída!")
+    else:
+        print("🔄 Ok, volte quando terminar.")
+
+print("\n🎉 Parabéns! Você concluiu todas as tarefas!")
+
+
+
+
+tarefas = ["Estudar Python", "Fazer exercícios", "Ler um livro", "Beber água"]
+
+print("=== Lista de Tarefas ===")
+concluidas = 0
+
+for tarefa in tarefas:
+    print("\nTarefa:", tarefa)
+    resposta = input("Você já concluiu essa tarefa? (s/n): ")
+
+    if resposta.lower() == 's':
+        print(f"✅ Muito bem! '{tarefa}' marcada como concluída.")
+        concluidas += 1
+    else:
+        print("🔄 Tarefa pendente. Tente concluí-la mais tarde.")
+
+print(f"\nVocê concluiu {concluidas} de {len(tarefas)} tarefas.")
+
+
+
+ while = "repita enquanto isso for verdade"
+Você não sabe exatamente quantas vezes vai repetir.
+
+Ele continua rodando até você mandar parar.
+
+Útil para jogos, menus ou esperar uma resposta certa.
+
+Exemplo com while:
+
+# senha = ""
+# while senha != "1234":
+#     senha = input("Digite a senha: ")
+
+# print("Acesso liberado!")
+
+
+Resumo simples: diferença entre for e while
+🔁 for = "repita X vezes ou percorra essa lista"
+Você sabe quantas vezes vai repetir.
+
+Serve para percorrer listas, como nomes ou tarefas.
+
+Vai do começo até o fim, uma vez só.
+
+Exemplo com for:
+
+
+
+for nome in ["Ana", "João", "Lia"]:
+    print("Olá", nome)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
      
