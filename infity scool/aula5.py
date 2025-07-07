@@ -147,4 +147,6 @@
 
 # PRATIQUE E APRENDA 29/06/2023
 
-ainda não fiz, mas vou fazer agora amanhã, 08/07/2023
+# ainda não fiz, mas vou fazer agora amanhã, 08/07/2023
+
+ou dia 09/07/2023
