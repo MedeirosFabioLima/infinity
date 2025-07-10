@@ -46,21 +46,34 @@
 # Peça ao usuário para digitar seu peso e altura, armazene em
 # variáveis e calcule o IMC.
 
-# Solicita o peso e a altura do usuário
-peso = float(input("Digite seu peso em kg: "))
-altura = float(input("Digite sua altura em metros: "))
+# # Solicita o peso e a altura do usuário
+# peso = float(input("Digite seu peso em kg: "))
+# altura = float(input("Digite sua altura em metros: "))
 
-# Calcula o IMC (fórmula: peso / altura²)
-imc = peso / (altura ** 2)
+# # Calcula o IMC (fórmula: peso / altura²)
+# imc = peso / (altura ** 2)
 
-# Exibe o resultado com duas casas decimais
-print(f"Seu IMC é: {imc:.2f}")
+# # Exibe o resultado com duas casas decimais
+# print(f"Seu IMC é: {imc:.2f}")
 
 
 # Cálculo de Juros Simples:
 # Crie um programa que calcule o valor futuro de um investimento
 # usando a fórmula de juros simples. Peça ao usuário para digitar o
 # capital inicial, a taxa de juros e o tempo de aplicação.
+
+# Solicita os dados ao usuário
+capital = float(input("Digite o capital inicial (R$): "))
+taxa = float(input("Digite a taxa de juros (% ao mês ou ano): "))
+tempo = float(input("Digite o tempo da aplicação (meses ou anos): "))
+
+# Calcula o montante usando a fórmula de juros simples
+# Fórmula: M = C * (1 + i * t)
+montante = capital * (1 + (taxa / 100) * tempo)
+
+# Exibe o valor final
+print(f"O valor futuro do investimento é: R$ {montante:.2f}")
+
 
 
 
