@@ -7,6 +7,18 @@
 # Peça ao usuário para digitar um valor em metros, armazene
 # em uma variável e converta para centímetros.
 
+# Solicita ao usuário um valor em metros
+metros = float(input("Digite o valor em metros: "))
+
+# Converte metros para centímetros (1 metro = 100 centímetros)
+centimetros = metros * 100
+
+# Exibe o resultado
+print(f"{metros} metros equivalem a {centimetros} centímetros.")
+
+
+
+
 # Cálculo de Área:
 # Crie um programa que calcule a área de um retângulo.
 # Peça ao usuário para digitar a largura e a altura,
@@ -37,22 +49,22 @@
 # média e exiba se o aluno foi aprovado ou reprovado (média >= 6).
 
 
-# Solicita as quatro notas do aluno
-nota1 = float(input("Digite a primeira nota: "))
-nota2 = float(input("Digite a segunda nota: "))
-nota3 = float(input("Digite a terceira nota: "))
-nota4 = float(input("Digite a quarta nota: "))
+# # Solicita as quatro notas do aluno
+# nota1 = float(input("Digite a primeira nota: "))
+# nota2 = float(input("Digite a segunda nota: "))
+# nota3 = float(input("Digite a terceira nota: "))
+# nota4 = float(input("Digite a quarta nota: "))
 
-# Calcula a média das notas
-media = (nota1 + nota2 + nota3 + nota4) / 4
+# # Calcula a média das notas
+# media = (nota1 + nota2 + nota3 + nota4) / 4
 
-# Exibe a média e o resultado
-print(f"Média: {media:.2f}")
+# # Exibe a média e o resultado
+# print(f"Média: {media:.2f}")
 
-if media >= 6:
-    print("Aluno aprovado!")
-else:
-    print("Aluno reprovado.")
+# if media >= 6:
+#     print("Aluno aprovado!")
+# else:
+#     print("Aluno reprovado.")
 
 
 # Algoritmo de Cálculo de Desconto:
