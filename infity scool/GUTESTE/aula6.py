@@ -24,17 +24,17 @@
 # Peça ao usuário para digitar a largura e a altura,
 # armazene em variáveis e calcule a área.
 
-# Solicita ao usuário a largura do retângulo
-largura = float(input("Digite a largura do retângulo (em metros): "))
+# # Solicita ao usuário a largura do retângulo
+# largura = float(input("Digite a largura do retângulo (em metros): "))
 
-# Solicita ao usuário a altura do retângulo
-altura = float(input("Digite a altura do retângulo (em metros): "))
+# # Solicita ao usuário a altura do retângulo
+# altura = float(input("Digite a altura do retângulo (em metros): "))
 
-# Calcula a área do retângulo (fórmula: largura × altura)
-area = largura * altura
+# # Calcula a área do retângulo (fórmula: largura × altura)
+# area = largura * altura
 
-# Exibe o resultado
-print(f"A área do retângulo é {area:.2f} metros quadrados.")
+# # Exibe o resultado
+# print(f"A área do retângulo é {area:.2f} metros quadrados.")
 
 
 
@@ -45,6 +45,17 @@ print(f"A área do retângulo é {area:.2f} metros quadrados.")
 # Crie um programa que calcule o Índice de Massa Corporal (IMC).
 # Peça ao usuário para digitar seu peso e altura, armazene em
 # variáveis e calcule o IMC.
+
+# Solicita o peso e a altura do usuário
+peso = float(input("Digite seu peso em kg: "))
+altura = float(input("Digite sua altura em metros: "))
+
+# Calcula o IMC (fórmula: peso / altura²)
+imc = peso / (altura ** 2)
+
+# Exibe o resultado com duas casas decimais
+print(f"Seu IMC é: {imc:.2f}")
+
 
 # Cálculo de Juros Simples:
 # Crie um programa que calcule o valor futuro de um investimento
