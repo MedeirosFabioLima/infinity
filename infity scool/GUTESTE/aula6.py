@@ -62,17 +62,17 @@
 # usando a fórmula de juros simples. Peça ao usuário para digitar o
 # capital inicial, a taxa de juros e o tempo de aplicação.
 
-# Solicita os dados ao usuário
-capital = float(input("Digite o capital inicial (R$): "))
-taxa = float(input("Digite a taxa de juros (% ao mês ou ano): "))
-tempo = float(input("Digite o tempo da aplicação (meses ou anos): "))
+# # Solicita os dados ao usuário
+# capital = float(input("Digite o capital inicial (R$): "))
+# taxa = float(input("Digite a taxa de juros (% ao mês ou ano): "))
+# tempo = float(input("Digite o tempo da aplicação (meses ou anos): "))
 
-# Calcula o montante usando a fórmula de juros simples
-# Fórmula: M = C * (1 + i * t)
-montante = capital * (1 + (taxa / 100) * tempo)
+# # Calcula o montante usando a fórmula de juros simples
+# # Fórmula: M = C * (1 + i * t)
+# montante = capital * (1 + (taxa / 100) * tempo)
 
-# Exibe o valor final
-print(f"O valor futuro do investimento é: R$ {montante:.2f}")
+# # Exibe o valor final
+# print(f"O valor futuro do investimento é: R$ {montante:.2f}")
 
 
 
@@ -108,6 +108,22 @@ print(f"O valor futuro do investimento é: R$ {montante:.2f}")
 # Desenvolva um algoritmo que calcule o preço de um produto
 # após aplicar um desconto. Solicite o preço original e o percentual
 # de desconto.
+
+# Solicita o preço original do produto
+preco_original = float(input("Digite o preço original do produto (R$): "))
+
+# Solicita o percentual de desconto
+desconto_percentual = float(input("Digite o percentual de desconto (%): "))
+
+# Calcula o valor do desconto
+valor_desconto = preco_original * (desconto_percentual / 100)
+
+# Calcula o preço final com o desconto aplicado
+preco_final = preco_original - valor_desconto
+
+# Exibe os resultados
+print(f"Desconto: R$ {valor_desconto:.2f}")
+print(f"Preço com desconto: R$ {preco_final:.2f}")
 
 
 
