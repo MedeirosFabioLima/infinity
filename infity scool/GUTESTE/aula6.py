@@ -133,23 +133,33 @@
 # Desenvolva um algoritmo que converta uma quantidade de
 # segundos fornecida pelo usuário em horas, minutos e segundos.
 
-# Entrada do usuário
-segundos_total = int(input("Digite o total de segundos: "))
+# # Entrada do usuário
+# segundos_total = int(input("Digite o total de segundos: "))
 
-# Cálculos
-horas = segundos_total // 3600
-resto = segundos_total % 3600
-minutos = resto // 60
-segundos = resto % 60
+# # Cálculos
+# horas = segundos_total // 3600
+# resto = segundos_total % 3600
+# minutos = resto // 60
+# segundos = resto % 60
 
-# Saída formatada
-print(f"O tempo convertido é: {horas} hora(s), {minutos} minuto(s), {segundos} segundo(s).")
+# # Saída formatada
+# print(f"O tempo convertido é: {horas} hora(s), {minutos} minuto(s), {segundos} segundo(s).")
 
 
 # Algoritmo de Conversão de Temperatura:
 # Crie um algoritmo que converta uma temperatura de Celsius
 # para Fahrenheit. Solicite ao usuário a temperatura em Celsius
 # e exiba o resultado em Fahrenheit.
+
+# Entrada
+celsius = float(input("Digite a temperatura em Celsius: "))
+
+# Cálculo
+fahrenheit = (celsius * 9 / 5) + 32
+
+# Saída
+print(f"A temperatura em Fahrenheit é: {fahrenheit:.2f}°F")
+
 
 
 
