@@ -109,21 +109,21 @@
 # após aplicar um desconto. Solicite o preço original e o percentual
 # de desconto.
 
-# Solicita o preço original do produto
-preco_original = float(input("Digite o preço original do produto (R$): "))
+# # Solicita o preço original do produto
+# preco_original = float(input("Digite o preço original do produto (R$): "))
 
-# Solicita o percentual de desconto
-desconto_percentual = float(input("Digite o percentual de desconto (%): "))
+# # Solicita o percentual de desconto
+# desconto_percentual = float(input("Digite o percentual de desconto (%): "))
 
-# Calcula o valor do desconto
-valor_desconto = preco_original * (desconto_percentual / 100)
+# # Calcula o valor do desconto
+# valor_desconto = preco_original * (desconto_percentual / 100)
 
-# Calcula o preço final com o desconto aplicado
-preco_final = preco_original - valor_desconto
+# # Calcula o preço final com o desconto aplicado
+# preco_final = preco_original - valor_desconto
 
-# Exibe os resultados
-print(f"Desconto: R$ {valor_desconto:.2f}")
-print(f"Preço com desconto: R$ {preco_final:.2f}")
+# # Exibe os resultados
+# print(f"Desconto: R$ {valor_desconto:.2f}")
+# print(f"Preço com desconto: R$ {preco_final:.2f}")
 
 
 
@@ -132,6 +132,19 @@ print(f"Preço com desconto: R$ {preco_final:.2f}")
 # Algoritmo de Conversão de Tempo:
 # Desenvolva um algoritmo que converta uma quantidade de
 # segundos fornecida pelo usuário em horas, minutos e segundos.
+
+# Entrada do usuário
+segundos_total = int(input("Digite o total de segundos: "))
+
+# Cálculos
+horas = segundos_total // 3600
+resto = segundos_total % 3600
+minutos = resto // 60
+segundos = resto % 60
+
+# Saída formatada
+print(f"O tempo convertido é: {horas} hora(s), {minutos} minuto(s), {segundos} segundo(s).")
+
 
 # Algoritmo de Conversão de Temperatura:
 # Crie um algoritmo que converta uma temperatura de Celsius
