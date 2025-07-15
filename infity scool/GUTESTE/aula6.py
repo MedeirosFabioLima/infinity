@@ -173,23 +173,41 @@
 
 # Programa para classificar a idade
 
-# Solicita a idade do usuário
-idade = int(input("Digite sua idade: "))
+# # Solicita a idade do usuário
+# idade = int(input("Digite sua idade: "))
 
-# Verifica a categoria de idade
-if idade < 12:
-    print("Você é uma criança.")
-elif idade < 18:
-    print("Você é um adolescente.")
-elif idade < 60:
-    print("Você é um adulto.")
-else:
-    print("Você é um idoso.")
+# # Verifica a categoria de idade
+# if idade < 12:
+#     print("Você é uma criança.")
+# elif idade < 18:
+#     print("Você é um adolescente.")
+# elif idade < 60:
+#     print("Você é um adulto.")
+# else:
+#     print("Você é um idoso.")
 
 
 # Classificação de Notas:
 # Crie um programa que solicite uma nota de 0 a 100
 # e informe o conceito (A, B, C, D, F) com base na nota.
+
+# Solicita a nota ao usuário
+nota = int(input("Digite a nota (0 a 100): "))
+
+# Verifica o conceito com base na nota
+if nota >= 90 and nota <= 100:
+    print("Conceito: A")
+elif nota >= 80:
+    print("Conceito: B")
+elif nota >= 70:
+    print("Conceito: C")
+elif nota >= 60:
+    print("Conceito: D")
+elif nota >= 0:
+    print("Conceito: F")
+else:
+    print("Nota inválida. Digite um valor entre 0 e 100.")
+
 
 
 
