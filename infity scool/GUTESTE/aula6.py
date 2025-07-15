@@ -151,14 +151,14 @@
 # para Fahrenheit. Solicite ao usuário a temperatura em Celsius
 # e exiba o resultado em Fahrenheit.
 
-# Entrada
-celsius = float(input("Digite a temperatura em Celsius: "))
+# # Entrada
+# celsius = float(input("Digite a temperatura em Celsius: "))
 
-# Cálculo
-fahrenheit = (celsius * 9 / 5) + 32
+# # Cálculo
+# fahrenheit = (celsius * 9 / 5) + 32
 
-# Saída
-print(f"A temperatura em Fahrenheit é: {fahrenheit:.2f}°F")
+# # Saída
+# print(f"A temperatura em Fahrenheit é: {fahrenheit:.2f}°F")
 
 
 
@@ -170,6 +170,22 @@ print(f"A temperatura em Fahrenheit é: {fahrenheit:.2f}°F")
 # Categoria de Idade:
 # Desenvolva um programa que peça a idade do usuário e
 # informe se ele é criança, adolescente, adulto ou idoso.
+
+# Programa para classificar a idade
+
+# Solicita a idade do usuário
+idade = int(input("Digite sua idade: "))
+
+# Verifica a categoria de idade
+if idade < 12:
+    print("Você é uma criança.")
+elif idade < 18:
+    print("Você é um adolescente.")
+elif idade < 60:
+    print("Você é um adulto.")
+else:
+    print("Você é um idoso.")
+
 
 # Classificação de Notas:
 # Crie um programa que solicite uma nota de 0 a 100
