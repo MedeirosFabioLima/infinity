@@ -1,50 +1,87 @@
 # ______________________________________________________ Modulo de Python ____________________________________________________________
 
 
-# # O que é lista?
-# #é uma variável que guarda mais de um valor ao mesmo tempo. Cada um desses valores, tem uma posição (índice, index), e sempre começa com 0
+# # # O que é lista?
+# # #é uma variável que guarda mais de um valor ao mesmo tempo. Cada um desses valores, tem uma posição (índice, index), e sempre começa com 0
 
 
+# # # lista = ["Nath",1,1.75,True,[]]
+# # # print(lista[0])
+
+# # #como adicionar algo no final da lista?
+# # #append significa acrescentar e ele adiciona algo ao final da lista, mas apenas um por vez!
+# # # lista.append("Jonathan")
+# # # print(lista)
+
+# # #função e método:
+
+# # #Função: é um comando que faz alguma coisa, mas não depende do tipo da informação
+
+# # #Método:  é um comando que faz alguma coisa mas DEPENDE do tipo da informação
+
+# # # nome = 'nathalia'
+# # # print(nome.upper())
+
+
+# # #como adicionar algo em qualquer posição da lista?
+# # # lista = ["Nath",1,1.75,True,[]]
+# # # lista.insert(4,"Infinity School")
+# # # print(lista)
+
+# # #como remover algo de uma lista?
 # # lista = ["Nath",1,1.75,True,[]]
-# # print(lista[0])
 
-# #como adicionar algo no final da lista?
-# #append significa acrescentar e ele adiciona algo ao final da lista, mas apenas um por vez!
-# # lista.append("Jonathan")
-# # print(lista)
+# # #pop() - o pop() sem valor nos parenteses, remove o ultimo elemento da lista.
+# # # lista.pop()
+# # # print(lista)
 
-# #função e método:
+# # #pop(posição)
+# # # lista.pop(3)
+# # # print(lista)
 
-# #Função: é um comando que faz alguma coisa, mas não depende do tipo da informação
+# # # numeros = [1,2,3,4,5,5,5,6,7,8]
+# # # numeros.remove(5)
+# # # print(numeros)
+# # #remove() - ele espera receber o valor do elemento que voce quer remover, mas tem a seguinte observação, ele so remove a primeira ocorrencia do elemento
 
-# #Método:  é um comando que faz alguma coisa mas DEPENDE do tipo da informação
+# # nomes = ["Jonathan","Lucrécio","Matheus","Alexsander","Nathalia","Paulo","Oswaldo"]
+# # # for nome in nomes:
+# # #     print(nome)
 
-# # nome = 'nathalia'
-# # print(nome.upper())
+# # # nomes.extend(["Cristiane","Bárbara","Erick"]) - Adiciona mais de um elemento ao final da lista, mas esses elementos precisam estar dentro de outra lista
+# # # print(nomes)
+
+# # # nomes.sort() - organiza uma lista do menor para o maior ou em "ordem alfabética"
+# # # print(nomes)
 
 
-# #como adicionar algo em qualquer posição da lista?
-# # lista = ["Nath",1,1.75,True,[]]
-# # lista.insert(4,"Infinity School")
-# # print(lista)
+# numeros = [1,2,2,2,2,3,4,5,6,7,7,7,8]
+# # print(numeros.count(7)) - conta quantas vezes o elemento  dentro dos parenteses aparece na lista
 
-# #como remover algo de uma lista?
-# lista = ["Nath",1,1.75,True,[]]
 
-# #pop() - o pop() sem valor nos parenteses, remove o ultimo elemento da lista.
-# # lista.pop()
-# # print(lista)
+# # nomes.reverse() - Reverte a lista
+# # print(nomes)
 
-# #pop(posição)
-# # lista.pop(3)
-# # print(lista)
 
-# # numeros = [1,2,3,4,5,5,5,6,7,8]
-# # numeros.remove(5)
-# # print(numeros)
-# #remove() - ele espera receber o valor do elemento que voce quer remover, mas tem a seguinte observação, ele so remove a primeira ocorrencia do elemento
+# # print(numeros.index(4))
 
-# nomes = ["Jonathan","Lucrécio","Matheus","Alexsander","Nathalia","Paulo","Oswaldo"]
+# # nomes.clear() - Limpa a lista
+# # print(nomes)
+
+
+# #como saber o tamanho da lista?
+# # print(len(numeros))
+
+
+
+
+
+
+# # if not tem_habilitacao:
+# #     print("Você não tem habilitação! ")
+
+
+# # nomes = ["Jonathan","Lucrécio","Matheus","Alexsander","Nathalia","Paulo","Oswaldo"]
 # # for nome in nomes:
 # #     print(nome)
 
@@ -55,291 +92,290 @@
 # # print(nomes)
 
 
-numeros = [1,2,2,2,2,3,4,5,6,7,7,7,8]
-# print(numeros.count(7)) - conta quantas vezes o elemento  dentro dos parenteses aparece na lista
+# # numeros = [1,2,2,2,2,3,4,5,6,7,7,7,8]
+# # print(numeros.count(7)) - conta quantas vezes o elemento  dentro dos parenteses aparece na lista
 
 
-# nomes.reverse() - Reverte a lista
-# print(nomes)
+# # nomes.reverse() - Reverte a lista
+# # print(nomes)
 
 
-# print(numeros.index(4))
+# # print(numeros.index(4))
 
-# nomes.clear() - Limpa a lista
-# print(nomes)
+# # nomes.clear() - Limpa a lista
+# # print(nomes)
 
 
-#como saber o tamanho da lista?
-# print(len(numeros))
+# #como saber o tamanho da lista?
+# # print(len(numeros))
 
 
 
+# # numeros = [1,1,1,1,1,1,1,1,2,3,4,5,8,7,345,22,6,8,456,87,24,7]
+# # qtd = numeros.count(1)
+# # print(qtd)
+# # numeros.sort()
+# # print(numeros)
 
 
 
-# if not tem_habilitacao:
-#     print("Você não tem habilitação! ")
+# # nums = []
+# # qtd = int(input("Quantos numeros você quer digitar: "))
+# # for i in range(qtd):
+# #     numero = int(input("Digite um número: "))
+# #     nums.append(numero)
+# # soma = sum(nums)
+# # media = soma/len(nums)
+# # print(media)
 
 
-# nomes = ["Jonathan","Lucrécio","Matheus","Alexsander","Nathalia","Paulo","Oswaldo"]
-# for nome in nomes:
-#     print(nome)
+# # lista = [1,1,2,3,4,5,5,5]
+# # for i in lista:
+# #     qtd = lista.count(i)#2
+# #     print(f'Tem {qtd} numeros {i}')
+# #     if qtd>1:
+# #         lista.remove(i)
+# # print(lista)
 
-# nomes.extend(["Cristiane","Bárbara","Erick"]) - Adiciona mais de um elemento ao final da lista, mas esses elementos precisam estar dentro de outra lista
-# print(nomes)
 
-# nomes.sort() - organiza uma lista do menor para o maior ou em "ordem alfabética"
-# print(nomes)
+# #escreva um código em python que receba uma lista de numeros como entrada e retorne uma lista contendo a soma de cada par de numeros que aparecem consecutivamente
 
+# #tem uma lista de numeros em algum lugar
+# #tem um for de lista em algum lugar
+# #se o próximo numero, for o seguinte do atual, some os dois e adicione em uma nova lista
 
-# numeros = [1,2,2,2,2,3,4,5,6,7,7,7,8]
-# print(numeros.count(7)) - conta quantas vezes o elemento  dentro dos parenteses aparece na lista
+# # lista = [1,2,3,4,5,6,7]
+# # resultado = []
+# # for i in range(len(lista) - 1):
+# #     soma = lista[i] + lista[i + 1]
+# #     resultado.append(soma)
+# # print(resultado)
 
+# Na imagem, você pediu 5 exercícios sobre listas em Python, e eu sugeri os seguintes:
 
-# nomes.reverse() - Reverte a lista
-# print(nomes)
+# 1.Média de uma lista:
+# Escreva uma função que receba uma lista de números como entrada e retorne a média dos números na lista.
 
+# def media_lista(lista):
+#     if not lista:
+#         return 0
+#     return sum(lista) / len(lista)
 
-# print(numeros.index(4))
+# # Exemplo
+# print(media_lista([5, 10, 15]))  # Saída: 20.0
 
-# nomes.clear() - Limpa a lista
-# print(nomes)
+# Explicação linha por linha:
 
+# def media_lista(lista):
+# Define a função chamada media_lista, que recebe um parâmetro chamado lista.
 
-#como saber o tamanho da lista?
-# print(len(numeros))
+# if not lista:
+# Verifica se a lista está vazia. Em Python, uma lista vazia é considerada "False".
 
+# return 0
+# Se a lista estiver vazia, a função retorna zero (evita erro de divisão por zero).
 
+# sum(lista)
+# Soma todos os valores da lista.
 
-# numeros = [1,1,1,1,1,1,1,1,2,3,4,5,8,7,345,22,6,8,456,87,24,7]
-# qtd = numeros.count(1)
-# print(qtd)
-# numeros.sort()
-# print(numeros)
+# len(lista)
+# Conta quantos elementos existem na lista.
 
+# return sum(lista) / len(lista)
+# Faz a divisão da soma pela quantidade para calcular a média.
 
 
-# nums = []
-# qtd = int(input("Quantos numeros você quer digitar: "))
-# for i in range(qtd):
-#     numero = int(input("Digite um número: "))
-#     nums.append(numero)
-# soma = sum(nums)
-# media = soma/len(nums)
-# print(media)
+# 2.Remover duplicatas:
+# Escreva uma função que receba uma lista e retorne uma nova lista com todos os duplicados removidos, mantendo a ordem original dos elementos.
 
+# def remover_duplicatas(lista):
+#     nova_lista = []
+#     for item in lista:
+#         if item not in nova_lista:
+#             nova_lista.append(item)
+#     return nova_lista
 
-# lista = [1,1,2,3,4,5,5,5]
-# for i in lista:
-#     qtd = lista.count(i)#2
-#     print(f'Tem {qtd} numeros {i}')
-#     if qtd>1:
-#         lista.remove(i)
-# print(lista)
+# # Exemplo
+# print(remover_duplicatas([1, 2, 2, 3, 1, 4]))  # Saída: [1, 2, 3, 4]
 
+# Explicação passo a passo:
+# 1.nova_lista = []
+# Cria uma lista vazia para guardar os elementos sem repetição.
 
-#escreva um código em python que receba uma lista de numeros como entrada e retorne uma lista contendo a soma de cada par de numeros que aparecem consecutivamente
+# 2.for item in lista:
+# Percorre cada elemento da lista original.
 
-#tem uma lista de numeros em algum lugar
-#tem um for de lista em algum lugar
-#se o próximo numero, for o seguinte do atual, some os dois e adicione em uma nova lista
+# 3.if item not in nova_lista:
+# Verifica se o item ainda não foi adicionado.
 
-# lista = [1,2,3,4,5,6,7]
-# resultado = []
-# for i in range(len(lista) - 1):
-#     soma = lista[i] + lista[i + 1]
-#     resultado.append(soma)
-# print(resultado)
+# 4.mnova_lista.append(item)
+# Se for a primeira vez, adiciona à nova lista.
 
-Na imagem, você pediu 5 exercícios sobre listas em Python, e eu sugeri os seguintes:
+# 5.return nova_lista
+# Retorna a lista sem duplicatas.
 
-1.Média de uma lista:
-Escreva uma função que receba uma lista de números como entrada e retorne a média dos números na lista.
 
-def media_lista(lista):
-    if not lista:
-        return 0
-    return sum(lista) / len(lista)
+# 3.Inversão de lista:
+# Escreva uma função que receba uma lista como entrada e retorne uma nova lista com os elementos na ordem inversa.
 
-# Exemplo
-print(media_lista([5, 10, 15]))  # Saída: 20.0
+# def inverter_lista(lista):
+#     return lista[::-1]
 
-Explicação linha por linha:
+# # Exemplo
+# print(inverter_lista([1, 2, 3, 4]))  # Saída: [4, 3, 2, 1]
 
-def media_lista(lista):
-Define a função chamada media_lista, que recebe um parâmetro chamado lista.
 
-if not lista:
-Verifica se a lista está vazia. Em Python, uma lista vazia é considerada "False".
 
-return 0
-Se a lista estiver vazia, a função retorna zero (evita erro de divisão por zero).
+# FORMA ALTERNATIVA (sem [::-1]):
 
-sum(lista)
-Soma todos os valores da lista.
+# def inverter_lista(lista):
+#     nova_lista = []
+#     for i in range(len(lista)-1, -1, -1):
+#         nova_lista.append(lista[i])
+#     return nova_lista
+# print(inverter_lista([1, 2, 3, 4]))
 
-len(lista)
-Conta quantos elementos existem na lista.
+# Explicação:
+# range(len(lista)-1, -1, -1) conta de trás pra frente.
 
-return sum(lista) / len(lista)
-Faz a divisão da soma pela quantidade para calcular a média.
+# Vai pegando os elementos do fim até o começo.
 
 
-2.Remover duplicatas:
-Escreva uma função que receba uma lista e retorne uma nova lista com todos os duplicados removidos, mantendo a ordem original dos elementos.
 
-def remover_duplicatas(lista):
-    nova_lista = []
-    for item in lista:
-        if item not in nova_lista:
-            nova_lista.append(item)
-    return nova_lista
+# 4.Ordenação parcial:
+# Escreva uma função que receba uma lista de números como entrada e retorne uma nova lista contendo os números pares ordenados e os ímpares na mesma ordem original.
 
-# Exemplo
-print(remover_duplicatas([1, 2, 2, 3, 1, 4]))  # Saída: [1, 2, 3, 4]
+# def ordenar_pares(lista):
+#     pares_ordenados = sorted([x for x in lista if x % 2 == 0])
+#     resultado = []
+#     indice_par = 0
+#     for num in lista:
+#         if num % 2 == 0:
+#             resultado.append(pares_ordenados[indice_par])
+#             indice_par += 1
+#         else:
+#             resultado.append(num)
+#     return resultado
 
-Explicação passo a passo:
-1.nova_lista = []
-Cria uma lista vazia para guardar os elementos sem repetição.
+# # Exemplo
+# print(ordenar_pares([5, 4, 2, 7, 6]))  # Saída: [5, 2, 4, 7, 6]
 
-2.for item in lista:
-Percorre cada elemento da lista original.
 
-3.if item not in nova_lista:
-Verifica se o item ainda não foi adicionado.
+# 5.Soma de elementos consecutivos:
+# Escreva uma função que receba uma lista de números e retorne uma nova lista contendo a soma de cada par de elementos consecutivos da lista original.
 
-4.mnova_lista.append(item)
-Se for a primeira vez, adiciona à nova lista.
+# def soma_consecutivos(lista):
+#     return [lista[i] + lista[i + 1] for i in range(len(lista) - 1)]
 
-5.return nova_lista
-Retorna a lista sem duplicatas.
+# # Exemplo
+# print(soma_consecutivos([1, 2, 3, 4]))  # Saída: [3, 5, 7]
 
 
-3.Inversão de lista:
-Escreva uma função que receba uma lista como entrada e retorne uma nova lista com os elementos na ordem inversa.
 
-def inverter_lista(lista):
-    return lista[::-1]
+# # Mini-Projeto: Operações com Listas
 
-# Exemplo
-print(inverter_lista([1, 2, 3, 4]))  # Saída: [4, 3, 2, 1]
 
+# def media_lista(lista):
+#     if not lista:
+#         return 0
+#     return sum(lista) / len(lista)
 
+# def remover_duplicatas(lista):
+#     nova_lista = []
+#     for item in lista:
+#         if item not in nova_lista:
+#             nova_lista.append(item)
+#     return nova_lista
 
-FORMA ALTERNATIVA (sem [::-1]):
+# def inverter_lista(lista):
+#     return lista[::-1]
 
-def inverter_lista(lista):
-    nova_lista = []
-    for i in range(len(lista)-1, -1, -1):
-        nova_lista.append(lista[i])
-    return nova_lista
-print(inverter_lista([1, 2, 3, 4]))
+# def ordenar_pares(lista):
+#     pares_ordenados = sorted([x for x in lista if x % 2 == 0])
+#     resultado = []
+#     indice_par = 0
+#     for num in lista:
+#         if num % 2 == 0:
+#             resultado.append(pares_ordenados[indice_par])
+#             indice_par += 1
+#         else:
+#             resultado.append(num)
+#     return resultado
 
-Explicação:
-range(len(lista)-1, -1, -1) conta de trás pra frente.
+# def soma_consecutivos(lista):
+#     return [lista[i] + lista[i + 1] for i in range(len(lista) - 1)]
 
-Vai pegando os elementos do fim até o começo.
+# def converter_entrada(entrada):
+#     return list(map(int, entrada.strip().split()))
 
+# def menu():
+#     while True:
+#         print("\n=== MENU: Operações com Listas ===")
+#         print("1. Calcular média da lista")
+#         print("2. Remover duplicatas")
+#         print("3. Inverter a lista")
+#         print("4. Ordenar números pares (ímpares mantêm a ordem)")
+#         print("5. Somar elementos consecutivos")
+#         print("0. Sair")
+#         opcao = input("Escolha uma opção: ")
 
+#         if opcao == "0":
+#             print("Saindo do programa. Até mais!")
+#             break
 
-4.Ordenação parcial:
-Escreva uma função que receba uma lista de números como entrada e retorne uma nova lista contendo os números pares ordenados e os ímpares na mesma ordem original.
+#         entrada = input("Digite os números da lista, separados por espaço: ")
+#         lista = converter_entrada(entrada)
 
-def ordenar_pares(lista):
-    pares_ordenados = sorted([x for x in lista if x % 2 == 0])
-    resultado = []
-    indice_par = 0
-    for num in lista:
-        if num % 2 == 0:
-            resultado.append(pares_ordenados[indice_par])
-            indice_par += 1
-        else:
-            resultado.append(num)
-    return resultado
+#         if opcao == "1":
+#             print("Média da lista:", media_lista(lista))
+#         elif opcao == "2":
+#             print("Lista sem duplicatas:", remover_duplicatas(lista))
+#         elif opcao == "3":
+#             print("Lista invertida:", inverter_lista(lista))
+#         elif opcao == "4":
+#             print("Pares ordenados, ímpares mantidos:", ordenar_pares(lista))
+#         elif opcao == "5":
+#             print("Soma dos elementos consecutivos:", soma_consecutivos(lista))
+#         else:
+#             print("Opção inválida. Tente novamente.")
 
-# Exemplo
-print(ordenar_pares([5, 4, 2, 7, 6]))  # Saída: [5, 2, 4, 7, 6]
 
 
-5.Soma de elementos consecutivos:
-Escreva uma função que receba uma lista de números e retorne uma nova lista contendo a soma de cada par de elementos consecutivos da lista original.
 
-def soma_consecutivos(lista):
-    return [lista[i] + lista[i + 1] for i in range(len(lista) - 1)]
+# Lê quatro valores e guarda em uma tupla
+valores = (
+    int(input('Digite o 1º valor: ')),
+    int(input('Digite o 2º valor: ')),
+    int(input('Digite o 3º valor: ')),
+    int(input('Digite o 4º valor: '))
+)
 
-# Exemplo
-print(soma_consecutivos([1, 2, 3, 4]))  # Saída: [3, 5, 7]
+print(f'\nVocê digitou os valores: {valores}')
 
+# A) Quantas vezes apareceu o valor 9
+print(f'O valor 9 apareceu {valores.count(9)} vez(es).')
 
+# B) Em que posição foi digitado o primeiro valor 3
+if 3 in valores:
+    print(f'O valor 3 apareceu primeiro na posição {valores.index(3)+1}ª.')
+else:
+    print('O valor 3 não foi digitado.')
 
-# Mini-Projeto: Operações com Listas
+# C) Quais foram os números pares
+pares = [n for n in valores if n % 2 == 0]
+if pares:
+    print(f'Os números pares digitados foram: {pares}')
+else:
+    print('Nenhum número par foi digitado.')
 
 
-def media_lista(lista):
-    if not lista:
-        return 0
-    return sum(lista) / len(lista)
+    #Explicação rápida:
+#tuple() armazena os números como imutáveis.
 
-def remover_duplicatas(lista):
-    nova_lista = []
-    for item in lista:
-        if item not in nova_lista:
-            nova_lista.append(item)
-    return nova_lista
+#.count(9) conta quantas vezes o número 9 apareceu.
 
-def inverter_lista(lista):
-    return lista[::-1]
+#index(3) mostra a posição do primeiro 3 (começa do 0, então somamos +1 para mostrar “posição humana”).
 
-def ordenar_pares(lista):
-    pares_ordenados = sorted([x for x in lista if x % 2 == 0])
-    resultado = []
-    indice_par = 0
-    for num in lista:
-        if num % 2 == 0:
-            resultado.append(pares_ordenados[indice_par])
-            indice_par += 1
-        else:
-            resultado.append(num)
-    return resultado
-
-def soma_consecutivos(lista):
-    return [lista[i] + lista[i + 1] for i in range(len(lista) - 1)]
-
-def converter_entrada(entrada):
-    return list(map(int, entrada.strip().split()))
-
-def menu():
-    while True:
-        print("\n=== MENU: Operações com Listas ===")
-        print("1. Calcular média da lista")
-        print("2. Remover duplicatas")
-        print("3. Inverter a lista")
-        print("4. Ordenar números pares (ímpares mantêm a ordem)")
-        print("5. Somar elementos consecutivos")
-        print("0. Sair")
-        opcao = input("Escolha uma opção: ")
-
-        if opcao == "0":
-            print("Saindo do programa. Até mais!")
-            break
-
-        entrada = input("Digite os números da lista, separados por espaço: ")
-        lista = converter_entrada(entrada)
-
-        if opcao == "1":
-            print("Média da lista:", media_lista(lista))
-        elif opcao == "2":
-            print("Lista sem duplicatas:", remover_duplicatas(lista))
-        elif opcao == "3":
-            print("Lista invertida:", inverter_lista(lista))
-        elif opcao == "4":
-            print("Pares ordenados, ímpares mantidos:", ordenar_pares(lista))
-        elif opcao == "5":
-            print("Soma dos elementos consecutivos:", soma_consecutivos(lista))
-        else:
-            print("Opção inválida. Tente novamente.")
-
-# Iniciar o menu
-menu()
+#A lista [n for n in valores if n % 2 == 0] usa list comprehension para pegar só os pares.
 
 
