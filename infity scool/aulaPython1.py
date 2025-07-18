@@ -416,29 +416,60 @@
 
 
 # Tupla com os 20 primeiros colocados do Brasileirão (exemplo fictício)
-tabela_brasileirao = (
-    'Flamengo', 'Botafogo', 'Palmeiras', 'Grêmio', 'Atlético-MG',
-    'Athletico-PR', 'Bragantino', 'Fortaleza', 'Internacional', 'Cuiabá',
-    'São Paulo', 'Cruzeiro', 'Bahia', 'Corinthians', 'Santos',
-    'Vasco', 'Goiás', 'Coritiba', 'América-MG', 'Chapecoense'
+
+# tabela_brasileirao = (
+#     'Flamengo', 'Botafogo', 'Palmeiras', 'Grêmio', 'Atlético-MG',
+#     'Athletico-PR', 'Bragantino', 'Fortaleza', 'Internacional', 'Cuiabá',
+#     'São Paulo', 'Cruzeiro', 'Bahia', 'Corinthians', 'Santos',
+#     'Vasco', 'Goiás', 'Coritiba', 'América-MG', 'Chapecoense'
+# )
+
+# # A) Os 5 primeiros colocados
+# #print("A) Os 5 primeiros colocados são:")uma tupla preenchida com os 20 primeiros colocados da tabela do campeonato #brasileiro de futebol,na ordem de colocação.Deois moestre: A) apenas os 5 primeiros colocados. B) os últimos 4 colocados #da tabela. C) uma lista com os times em ordem alfabética. D) em que posição na tabela está o time do corinthians .
+# print(tabela_brasileirao[:5])
+
+# # B) Os 4 últimos colocados
+# print("\nB) Os 4 últimos colocados são:")
+# print(tabela_brasileirao[-4:])
+
+# # C) Times em ordem alfabética
+# print("\nC) Times em ordem alfabética:")
+# print(sorted(tabela_brasileirao))
+
+# # D) Posição do Corinthians (índice + 1 porque posição começa em 1, não 0)
+# posicao = tabela_brasileirao.index('Corinthians') + 1
+# print(f"\nD) O Corinthians está na {posicao}ª posição da tabela.")
+
+#uma tupla preenchida com os 20 primeiros colocados da tabela do campeonato brasileiro de futebol,na ordem de colocação.Deois moestre: A) apenas os 5 primeiros colocados. B) os últimos 4 colocados da tabela. C) uma lista com os times em ordem alfabética. D) em que posição na tabela está o time do corinthians"
+
+
+# um programa que vai gerar cinco números aleatórios e colocar em uma tupla. Depois disso, mostre a listagem de números gerados e tambem indique o menor eo maior valor que estão na tupla.
+
+
+from random import randint
+
+# Gerar 5 números aleatórios entre 1 e 100 e colocá-los em uma tupla
+numeros = (
+    randint(1, 100),
+    randint(1, 100),
+    randint(1, 100),
+    randint(1, 100),
+    randint(1, 100)
 )
 
-# A) Os 5 primeiros colocados
-print("A) Os 5 primeiros colocados são:")
-print(tabela_brasileirao[:5])
+# Mostrar os números gerados
+print("Números sorteados:", numeros)
 
-# B) Os 4 últimos colocados
-print("\nB) Os 4 últimos colocados são:")
-print(tabela_brasileirao[-4:])
+# Mostrar o maior e o menor valor
+print("Maior número:", max(numeros))
+print("Menor número:", min(numeros))
 
-# C) Times em ordem alfabética
-print("\nC) Times em ordem alfabética:")
-print(sorted(tabela_brasileirao))
+# Explicando:
+#randint(1, 100) → gera um número aleatório entre 1 e 100.
 
-# D) Posição do Corinthians (índice + 1 porque posição começa em 1, não 0)
-posicao = tabela_brasileirao.index('Corinthians') + 1
-print(f"\nD) O Corinthians está na {posicao}ª posição da tabela.")
+#max(tupla) → retorna o maior valor da tupla.
 
+#min(tupla) → retorna o menor valor da tupla.
 
 
 
