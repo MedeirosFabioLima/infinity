@@ -342,40 +342,74 @@
 
 
 
-# Lê quatro valores e guarda em uma tupla
-valores = (
-    int(input('Digite o 1º valor: ')),
-    int(input('Digite o 2º valor: ')),
-    int(input('Digite o 3º valor: ')),
-    int(input('Digite o 4º valor: '))
+
+#desenvolva um programa que leia quatro valores pelo teclado e guarde-os em uma tupla. No final, mostre: A) quantas vezes apareceu o valor 9. B) Em que posiçaõ foi digitado o primeiro valor 3. C) Quais foram os números pares.
+
+
+
+# # Lê quatro valores e guarda em uma tupla
+# valores = (
+#     int(input('Digite o 1º valor: ')),
+#     int(input('Digite o 2º valor: ')),
+#     int(input('Digite o 3º valor: ')),
+#     int(input('Digite o 4º valor: '))
+# )
+
+# print(f'\nVocê digitou os valores: {valores}')
+
+# # A) Quantas vezes apareceu o valor 9
+# print(f'O valor 9 apareceu {valores.count(9)} vez(es).')
+
+# # B) Em que posição foi digitado o primeiro valor 3
+# if 3 in valores:
+#     print(f'O valor 3 apareceu primeiro na posição {valores.index(3)+1}ª.')
+# else:
+#     print('O valor 3 não foi digitado.')
+
+# # C) Quais foram os números pares
+# pares = [n for n in valores if n % 2 == 0]
+# if pares:
+#     print(f'Os números pares digitados foram: {pares}')
+# else:
+#     print('Nenhum número par foi digitado.')
+
+
+#     #Explicação rápida:
+# #tuple() armazena os números como imutáveis.
+
+# #.count(9) conta quantas vezes o número 9 apareceu.
+
+# #index(3) mostra a posição do primeiro 3 (começa do 0, então somamos +1 para mostrar “posição humana”).
+
+# #A lista [n for n in valores if n % 2 == 0] usa list comprehension para pegar só os pares.
+
+
+
+# programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até vinte. Seu programa deverá ler um número pelo teclado(entre o e 20) e mostrá-lo por extenso.
+
+# Tupla com os números de 0 a 20 por extenso
+numeros_por_extenso = (
+    'zero', 'um', 'dois', 'três', 'quatro',
+    'cinco', 'seis', 'sete', 'oito', 'nove',
+    'dez', 'onze', 'doze', 'treze', 'quatorze',
+    'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove',
+    'vinte'
 )
 
-print(f'\nVocê digitou os valores: {valores}')
+while True:
+    numero = int(input("Digite um número entre 0 e 20: "))
+    if 0 <= numero <= 20:
+        break
+    print("Tente novamente. Número fora do intervalo!")
 
-# A) Quantas vezes apareceu o valor 9
-print(f'O valor 9 apareceu {valores.count(9)} vez(es).')
+print(f"Você digitou o número {numeros_por_extenso[numero]}.")
 
-# B) Em que posição foi digitado o primeiro valor 3
-if 3 in valores:
-    print(f'O valor 3 apareceu primeiro na posição {valores.index(3)+1}ª.')
-else:
-    print('O valor 3 não foi digitado.')
+# Como funciona:
+#A tupla numeros_por_extenso armazena os nomes dos números de 0 a 20.
 
-# C) Quais foram os números pares
-pares = [n for n in valores if n % 2 == 0]
-if pares:
-    print(f'Os números pares digitados foram: {pares}')
-else:
-    print('Nenhum número par foi digitado.')
+#Um laço while garante que o usuário só digite um número válido (entre 0 e 20).
 
+#Quando um número válido é digitado, o programa mostra o número por extenso usando o índice da tupla.
 
-    #Explicação rápida:
-#tuple() armazena os números como imutáveis.
-
-#.count(9) conta quantas vezes o número 9 apareceu.
-
-#index(3) mostra a posição do primeiro 3 (começa do 0, então somamos +1 para mostrar “posição humana”).
-
-#A lista [n for n in valores if n % 2 == 0] usa list comprehension para pegar só os pares.
 
 
