@@ -387,22 +387,22 @@
 
 # programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até vinte. Seu programa deverá ler um número pelo teclado(entre o e 20) e mostrá-lo por extenso.
 
-# Tupla com os números de 0 a 20 por extenso
-numeros_por_extenso = (
-    'zero', 'um', 'dois', 'três', 'quatro',
-    'cinco', 'seis', 'sete', 'oito', 'nove',
-    'dez', 'onze', 'doze', 'treze', 'quatorze',
-    'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove',
-    'vinte'
-)
+# # Tupla com os números de 0 a 20 por extenso
+# numeros_por_extenso = (
+#     'zero', 'um', 'dois', 'três', 'quatro',
+#     'cinco', 'seis', 'sete', 'oito', 'nove',
+#     'dez', 'onze', 'doze', 'treze', 'quatorze',
+#     'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove',
+#     'vinte'
+# )
 
-while True:
-    numero = int(input("Digite um número entre 0 e 20: "))
-    if 0 <= numero <= 20:
-        break
-    print("Tente novamente. Número fora do intervalo!")
+# while True:
+#     numero = int(input("Digite um número entre 0 e 20: "))
+#     if 0 <= numero <= 20:
+#         break
+#     print("Tente novamente. Número fora do intervalo!")
 
-print(f"Você digitou o número {numeros_por_extenso[numero]}.")
+# print(f"Você digitou o número {numeros_por_extenso[numero]}.")
 
 # Como funciona:
 #A tupla numeros_por_extenso armazena os nomes dos números de 0 a 20.
@@ -410,6 +410,35 @@ print(f"Você digitou o número {numeros_por_extenso[numero]}.")
 #Um laço while garante que o usuário só digite um número válido (entre 0 e 20).
 
 #Quando um número válido é digitado, o programa mostra o número por extenso usando o índice da tupla.
+
+
+#  uma tupla preenchida com os 20 primeiros colocados da tabela do campeonato brasileiro de futebol,na ordem de colocação.Deois moestre: A) apenas os 5 primeiros colocados. B) os últimos 4 colocados da tabela. C) uma lista com os times em ordem alfabética. D) em que posição na tabela está o time do corinthians .
+
+
+# Tupla com os 20 primeiros colocados do Brasileirão (exemplo fictício)
+tabela_brasileirao = (
+    'Flamengo', 'Botafogo', 'Palmeiras', 'Grêmio', 'Atlético-MG',
+    'Athletico-PR', 'Bragantino', 'Fortaleza', 'Internacional', 'Cuiabá',
+    'São Paulo', 'Cruzeiro', 'Bahia', 'Corinthians', 'Santos',
+    'Vasco', 'Goiás', 'Coritiba', 'América-MG', 'Chapecoense'
+)
+
+# A) Os 5 primeiros colocados
+print("A) Os 5 primeiros colocados são:")
+print(tabela_brasileirao[:5])
+
+# B) Os 4 últimos colocados
+print("\nB) Os 4 últimos colocados são:")
+print(tabela_brasileirao[-4:])
+
+# C) Times em ordem alfabética
+print("\nC) Times em ordem alfabética:")
+print(sorted(tabela_brasileirao))
+
+# D) Posição do Corinthians (índice + 1 porque posição começa em 1, não 0)
+posicao = tabela_brasileirao.index('Corinthians') + 1
+print(f"\nD) O Corinthians está na {posicao}ª posição da tabela.")
+
 
 
 
