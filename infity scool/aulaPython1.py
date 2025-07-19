@@ -446,23 +446,23 @@
 # um programa que vai gerar cinco números aleatórios e colocar em uma tupla. Depois disso, mostre a listagem de números gerados e tambem indique o menor eo maior valor que estão na tupla.
 
 
-from random import randint
+# from random import randint
 
-# Gerar 5 números aleatórios entre 1 e 100 e colocá-los em uma tupla
-numeros = (
-    randint(1, 100),
-    randint(1, 100),
-    randint(1, 100),
-    randint(1, 100),
-    randint(1, 100)
-)
+# # Gerar 5 números aleatórios entre 1 e 100 e colocá-los em uma tupla
+# numeros = (
+#     randint(1, 100),
+#     randint(1, 100),
+#     randint(1, 100),
+#     randint(1, 100),
+#     randint(1, 100)
+# )
 
-# Mostrar os números gerados
-print("Números sorteados:", numeros)
+# # Mostrar os números gerados
+# print("Números sorteados:", numeros)
 
-# Mostrar o maior e o menor valor
-print("Maior número:", max(numeros))
-print("Menor número:", min(numeros))
+# # Mostrar o maior e o menor valor
+# print("Maior número:", max(numeros))
+# print("Menor número:", min(numeros))
 
 # Explicando:
 #randint(1, 100) → gera um número aleatório entre 1 e 100.
@@ -470,6 +470,118 @@ print("Menor número:", min(numeros))
 #max(tupla) → retorna o maior valor da tupla.
 
 #min(tupla) → retorna o menor valor da tupla.
+
+
+# Tupla com produtos e preços (nome, preço, nome, preço...)
+produtos = (
+    'Lápis', 1.50,
+    'Caneta', 2.00,
+    'Caderno', 15.90,
+    'Borracha', 0.99,
+    'Mochila', 120.00,
+    'Estojo', 12.50,
+    'Régua', 3.75,
+    'Livro', 45.00
+)
+
+print('-' * 40)
+print(f'{"LISTAGEM DE PREÇOS":^40}')
+print('-' * 40)
+
+# Percorre os itens da tupla em pares (produto, preço)
+for i in range(0, len(produtos), 2):
+    nome = produtos[i]
+    preco = produtos[i + 1]
+    print(f'{nome:.<30} R$ {preco:>7.2f}')
+
+print('-' * 40)
+
+#EXPLICAÇÃO COMPLETA DO CÓDIGO
+#Objetivo:
+#Criar uma tupla com nomes de produtos e seus respectivos preços, e depois exibir uma tabela de preços formatada.
+
+# 1. A TUPLA:
+
+#produtos = (
+    'Lápis', 1.50,
+    'Caneta', 2.00,
+    ...
+)
+
+
+#A tupla armazena nomes e preços intercalados:
+
+#Índices pares (0, 2, 4...) = nomes dos produtos.
+
+#Índices ímpares (1, 3, 5...) = preços.
+
+#2. Cabeçalho da tabela:
+#print('-' * 40)
+#print(f'{"LISTAGEM DE PREÇOS":^40}')
+#print('-' * 40)
+
+#'-' * 40 → Imprime 40 traços.
+
+#f'{"LISTAGEM DE PREÇOS":^40}' → Centraliza o título em 40 caracteres.
+
+#3. Laço for para percorrer os dados:
+
+#for i in range(0, len(produtos), 2):
+    
+#Começa em 0 e vai até o final da tupla.
+
+#Vai de 2 em 2 porque cada item é composto por um nome e um preço.
+
+#Exemplo: índice 0 → "Lápis", índice 1 → 1.50
+
+#4. Coleta dos dados:
+
+#nome = produtos[i]
+#preco = produtos[i + 1]
+
+#Para cada par:
+
+#nome pega o nome do produto.
+
+#   preco pega o preço correspondente.
+
+# 5. Impressão formatada da linha:
+
+#print(f'{nome:.<30} R$ {preco:>7.2f}')
+
+#nome:.<30 → imprime o nome e preenche com pontos até 30 espaços.
+
+#preco:>7.2f → imprime o preço:
+
+#Alinhado à direita.
+
+#Com 2 casas decimais.
+
+#Dentro de 7 espaços (ex: 2.00)
+
+# 6. Final da tabela:
+
+#print('-' * 40)
+
+#Mais uma linha de traços para finalizar.
+
+# Exemplo de saída:
+
+# ----------------------------------------
+#          LISTAGEM DE PREÇOS         
+# ----------------------------------------
+# Lápis........................... R$    1.50
+# Caneta.......................... R$    2.00
+# Caderno......................... R$   15.90
+# Borracha........................ R$    0.99
+# Mochila......................... R$  120.00
+# Estojo.......................... R$   12.50
+# Régua........................... R$    3.75
+# Livro........................... R$   45.00
+# ----------------------------------------
+
+  
+
 
 
 
