@@ -502,11 +502,11 @@ print('-' * 40)
 
 # 1. A TUPLA:
 
-#produtos = (
-    'Lápis', 1.50,
-    'Caneta', 2.00,
-    ...
-)
+# #produtos = (
+#     'Lápis', 1.50,
+#     'Caneta', 2.00,
+#     ...
+# )
 
 
 #A tupla armazena nomes e preços intercalados:
