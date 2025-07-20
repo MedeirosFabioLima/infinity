@@ -585,24 +585,24 @@
 
 
 # Tupla com várias palavras (sem acento)
-palavras = ("carro", "bicicleta", "aviao", "computador", "python", "programacao")
+# palavras = ("carro", "bicicleta", "aviao", "computador", "python", "programacao")
 
-# Conjunto com as vogais para facilitar a checagem
-vogais = set("aeiou")
+# # Conjunto com as vogais para facilitar a checagem
+# vogais = set("aeiou")
 
-# Para cada palavra na tupla
-for palavra in palavras:
-    # Criar um conjunto para armazenar as vogais encontradas na palavra
-    vogais_na_palavra = set()
+# # Para cada palavra na tupla
+# for palavra in palavras:
+#     # Criar um conjunto para armazenar as vogais encontradas na palavra
+#     vogais_na_palavra = set()
 
-    # Percorrer cada letra da palavra
-    for letra in palavra:
-        # Se a letra for vogal, adiciona no conjunto
-        if letra in vogais:
-            vogais_na_palavra.add(letra)
+#     # Percorrer cada letra da palavra
+#     for letra in palavra:
+#         # Se a letra for vogal, adiciona no conjunto
+#         if letra in vogais:
+#             vogais_na_palavra.add(letra)
     
-    # Mostrar as vogais encontradas na palavra, ordenadas em ordem alfabética
-    print(f"Palavra '{palavra}' tem as vogais: {', '.join(sorted(vogais_na_palavra))}")
+#     # Mostrar as vogais encontradas na palavra, ordenadas em ordem alfabética
+#     print(f"Palavra '{palavra}' tem as vogais: {', '.join(sorted(vogais_na_palavra))}")
 
 
     #Explicação:
@@ -653,6 +653,27 @@ for palavra in palavras:
 
 
 
+                                      #Curso de Python - Lista e Tupla 20/07/2025
+
+
+num = [2, 5 , 9, 1]
+num [2] = 3
+num [3] = 7
+num.append(8)  # Adiciona o número 8 ao final da lista
+#num.sort()  # Organiza a lista em ordem crescente
+#num.reverse()  # Inverte a ordem da lista
+num.sort(reverse=True)
+num.insert(2, 0)  # Insere o número 0 na posição 2
+num.pop()  # Remove o último elemento da lista
+num.pop(2)  # Remove o elemento na posição 2
+num.append(3)  # Adiciona o número 3 ao final da lista
+num.remove(3)  # Remove a primeira ocorrência do número 3
+if 5 in num:  # Verifica se o número 4 está na lista
+    num.remove(5)  # Remove o número 4 se ele estiver na lista
+else:
+    print(f'Não existe o número 4 na lista, então não foi removido.')
+print(num)  
+print(f'Essa lista tem {len(num)} elementos.')
 
   
 
