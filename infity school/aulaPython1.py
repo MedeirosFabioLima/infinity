@@ -656,24 +656,52 @@
                                       #Curso de Python - Lista e Tupla 20/07/2025
 
 
-num = [2, 5 , 9, 1]
-num [2] = 3
-num [3] = 7
-num.append(8)  # Adiciona o número 8 ao final da lista
-#num.sort()  # Organiza a lista em ordem crescente
-#num.reverse()  # Inverte a ordem da lista
-num.sort(reverse=True)
-num.insert(2, 0)  # Insere o número 0 na posição 2
-num.pop()  # Remove o último elemento da lista
-num.pop(2)  # Remove o elemento na posição 2
-num.append(3)  # Adiciona o número 3 ao final da lista
-num.remove(3)  # Remove a primeira ocorrência do número 3
-if 5 in num:  # Verifica se o número 4 está na lista
-    num.remove(5)  # Remove o número 4 se ele estiver na lista
-else:
-    print(f'Não existe o número 4 na lista, então não foi removido.')
-print(num)  
-print(f'Essa lista tem {len(num)} elementos.')
+# num = [2, 5 , 9, 1]
+# num [2] = 3
+# num [3] = 7
+# num.append(8)  # Adiciona o número 8 ao final da lista
+# #num.sort()  # Organiza a lista em ordem crescente
+# #num.reverse()  # Inverte a ordem da lista
+# num.sort(reverse=True)
+# num.insert(2, 0)  # Insere o número 0 na posição 2
+# num.pop()  # Remove o último elemento da lista
+# num.pop(2)  # Remove o elemento na posição 2
+# num.append(3)  # Adiciona o número 3 ao final da lista
+# num.remove(3)  # Remove a primeira ocorrência do número 3
+# if 5 in num:  # Verifica se o número 4 está na lista
+#     num.remove(5)  # Remove o número 4 se ele estiver na lista
+# else:
+#     print(f'Não existe o número 4 na lista, então não foi removido.')
+# print(num)  
+# print(f'Essa lista tem {len(num)} elementos.')
+
+
+# valores = []
+# valores.append(2) 
+# valores.append(5)
+# valores.append(9)
+# valores.append(1)   
+# for c, v in enumerate(valores):
+#     print(f'Na posição {c} encontrei o valor {v}!')
+# print(f'Cheguei ao final da lista com {len(valores)} elementos.')
+
+# valores = []  # Cria uma lista vazia
+# for c in range(0, 10):  # Loop de 0 a 9
+#     valores.append(int(input(f'Digite o valor: ')))
+# for c, v in enumerate(valores):
+#     print(f'Na posição {c} encontrei o valor {v}!')
+# print(f'Cheguei ao final da lista com {len(valores)} elementos.')
+
+a = [2, 3, 4, 7,]   
+b = a[:] # Faz uma cópia da lista a
+b[2] = 8  # Altera o terceiro elemento da lista b
+print(f'Lista A: {a}')  
+print(f'Lista B: {b}')
+
+
+
+
+    
 
   
 
