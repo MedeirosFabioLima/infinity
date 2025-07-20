@@ -473,28 +473,28 @@
 
 
 # Tupla com produtos e preços (nome, preço, nome, preço...)
-produtos = (
-    'Lápis', 1.50,
-    'Caneta', 2.00,
-    'Caderno', 15.90,
-    'Borracha', 0.99,
-    'Mochila', 120.00,
-    'Estojo', 12.50,
-    'Régua', 3.75,
-    'Livro', 45.00
-)
+# produtos = (
+#     'Lápis', 1.50,
+#     'Caneta', 2.00,
+#     'Caderno', 15.90,
+#     'Borracha', 0.99,
+#     'Mochila', 120.00,
+#     'Estojo', 12.50,
+#     'Régua', 3.75,
+#     'Livro', 45.00
+# )
 
-print('-' * 40)
-print(f'{"LISTAGEM DE PREÇOS":^40}')
-print('-' * 40)
+# print('-' * 40)
+# print(f'{"LISTAGEM DE PREÇOS":^40}')
+# print('-' * 40)
 
-# Percorre os itens da tupla em pares (produto, preço)
-for i in range(0, len(produtos), 2):
-    nome = produtos[i]
-    preco = produtos[i + 1]
-    print(f'{nome:.<30} R$ {preco:>7.2f}')
+# # Percorre os itens da tupla em pares (produto, preço)
+# for i in range(0, len(produtos), 2):
+#     nome = produtos[i]
+#     preco = produtos[i + 1]
+#     print(f'{nome:.<30} R$ {preco:>7.2f}')
 
-print('-' * 40)
+# print('-' * 40)
 
 #EXPLICAÇÃO COMPLETA DO CÓDIGO
 #Objetivo:
@@ -579,6 +579,80 @@ print('-' * 40)
 # Régua........................... R$    3.75
 # Livro........................... R$   45.00
 # ----------------------------------------
+
+
+#Criar um programa que tenha uma tupla com várias palavras (não usar acentos). Depois disso, você deve mostrar, para cada palavra, quai são as suas vogais.
+
+
+# Tupla com várias palavras (sem acento)
+palavras = ("carro", "bicicleta", "aviao", "computador", "python", "programacao")
+
+# Conjunto com as vogais para facilitar a checagem
+vogais = set("aeiou")
+
+# Para cada palavra na tupla
+for palavra in palavras:
+    # Criar um conjunto para armazenar as vogais encontradas na palavra
+    vogais_na_palavra = set()
+
+    # Percorrer cada letra da palavra
+    for letra in palavra:
+        # Se a letra for vogal, adiciona no conjunto
+        if letra in vogais:
+            vogais_na_palavra.add(letra)
+    
+    # Mostrar as vogais encontradas na palavra, ordenadas em ordem alfabética
+    print(f"Palavra '{palavra}' tem as vogais: {', '.join(sorted(vogais_na_palavra))}")
+
+
+    #Explicação:
+#Usei uma tupla chamada palavras com algumas palavras.
+
+#Um set com as vogais para facilitar a comparação (mais rápido que lista).
+
+#Para cada palavra, eu verifico letra por letra se é vogal.
+
+#Uso um conjunto para armazenar as vogais, assim não repete.
+
+#No final, mostro as vogais encontradas, ordenadas para ficar mais organizado.#
+
+#o código linha a linha, bem simples pra você copiar e entender direitinho.
+
+
+#palavras = ("carro", "bicicleta", "aviao", "computador", "python", "programacao")
+#Aqui criamos uma tupla chamada palavras que armazena várias palavras sem acento. A tupla é imutável, então não dá pra alterar depois.
+
+
+#vogais = set("aeiou")
+#Criamos um conjunto (set) chamado vogais que contém as letras 'a', 'e', 'i', 'o', 'u'. O set é usado para facilitar a checagem rápida se uma letra está entre as vogais.
+
+
+#for palavra in palavras:
+#Iniciamos um laço que vai percorrer palavra por palavra dentro da tupla palavras.
+
+
+   # vogais_na_palavra = set()
+#Para cada palavra, criamos um conjunto vazio chamado vogais_na_palavra para armazenar as vogais encontradas nessa palavra. Usamos set pra evitar repetições.
+
+
+    #for letra in palavra:
+#Agora, para cada palavra, fazemos outro laço que percorre letra por letra dentro da palavra.
+
+
+        #if letra in vogais:
+            #vogais_na_palavra.add(letra)
+#Se a letra atual estiver dentro do conjunto vogais (ou seja, se for vogal), adicionamos essa letra ao conjunto vogais_na_palavra.
+
+
+    #print(f"Palavra '{palavra}' tem as vogais: {', '.join(sorted(vogais_na_palavra))}")
+#Depois de verificar todas as letras da palavra, mostramos na tela quais vogais foram encontradas.
+
+#Usamos sorted() para ordenar as vogais em ordem alfabética.
+
+#O ', '.join(...) transforma o conjunto em uma string separada por vírgulas, para mostrar bonitinho.
+
+
+
 
   
 
