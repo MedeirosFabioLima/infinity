@@ -692,11 +692,162 @@
 #     print(f'Na posição {c} encontrei o valor {v}!')
 # print(f'Cheguei ao final da lista com {len(valores)} elementos.')
 
-a = [2, 3, 4, 7,]   
-b = a[:] # Faz uma cópia da lista a
-b[2] = 8  # Altera o terceiro elemento da lista b
-print(f'Lista A: {a}')  
-print(f'Lista B: {b}')
+# a = [2, 3, 4, 7,]   
+# b = a[:] # Faz uma cópia da lista a
+# b[2] = 8  # Altera o terceiro elemento da lista b
+# print(f'Lista A: {a}')  
+# print(f'Lista B: {b}')
+
+                          
+                          
+                          #Programa: Maior e menor valor com posições - Desafio 78 listas
+
+# Lista para armazenar os números
+numeros = []
+
+# Leitura de 5 valores numéricos
+for i in range(6):
+    valor = int(input(f"Digite o {i+1}º valor: "))
+    numeros.append(valor)
+
+# Determinar o maior e o menor valor
+maior = max(numeros)
+menor = min(numeros)
+
+# Encontrar as posições (índices) do maior e menor valor
+pos_maior = []
+pos_menor = []
+
+for i, v in enumerate(numeros):
+    if v == maior:
+        pos_maior.append(i)
+    if v == menor:
+        pos_menor.append(i)
+
+# Mostrar resultados
+print(f"\nVocê digitou os valores: {numeros}")
+print(f"O maior valor foi {maior} nas posições: {pos_maior}")
+print(f"O menor valor foi {menor} nas posições: {pos_menor}")
+
+
+
+# Explicação:
+#numeros.append(valor) → adiciona cada valor digitado à lista.
+
+#max(numeros) e min(numeros) → pegam o maior e o menor valor da lista.
+
+#enumerate(numeros) → retorna o índice e o valor de cada item da lista.
+
+#pos_maior e pos_menor → armazenam todas as posições onde o maior ou o menor valor aparecem (caso se repitam).
+
+
+                      # explicação passo a passo, linha por linha do programa que:
+
+#Lê 5 números
+
+#Guarda em uma lista
+
+#Mostra o maior e o menor valor
+
+#Mostra em que posições eles aparecem na lista
+
+                                  # CÓDIGO COMENTADO E EXPLICADO
+
+# Lista para armazenar os números
+#numeros = []
+                                         # Explicação:
+#Criamos uma lista vazia chamada numeros. Vamos usar essa lista para guardar os 5 valores que o usuário vai digitar.
+
+
+# Leitura de 5 valores numéricos
+#for i in range(5):
+    #valor = int(input(f"Digite o {i+1}º valor: "))
+    #numeros.append(valor)
+                                  # Explicação passo a passo:
+
+#for i in range(5): → Um laço que vai repetir 5 vezes, de i = 0 até i = 4.
+
+#input(f"Digite o {i+1}º valor: ") → Mostra a mensagem pedindo o valor ao usuário, usando i+1 para numerar de 1 a 5.
+
+#int(...) → Converte o valor digitado para número inteiro.
+
+#numeros.append(valor) → Adiciona esse valor no final da lista numeros.
+
+ #No final dessa etapa, a lista numeros terá 5 números digitados.
+
+
+# Determinar o maior e o menor valor
+#maior = max(numeros)
+#menor = min(numeros)
+                                        # Explicação:
+
+#max(numeros) → retorna o maior valor da lista numeros e armazena na variável maior.
+
+#min(numeros) → retorna o menor valor da lista numeros e armazena na variável menor.
+
+
+# Encontrar as posições (índices) do maior e menor valor
+#pos_maior = []
+#pos_menor = []
+ 
+                                          # Explicação:
+
+#Criamos duas listas vazias: pos_maior e pos_menor.
+
+#Nelas vamos guardar as posições (índices) onde aparecem o maior e o menor valor.
+
+
+#for i, v in enumerate(numeros):
+    #if v == maior:
+        #pos_maior.append(i)
+    #if v == menor:
+        #pos_menor.append(i)
+
+                                           # Explicação:
+
+#enumerate(numeros) → devolve dois valores a cada volta: o índice i (posição na lista) e o valor v.
+
+#if v == maior: → se o valor atual for igual ao maior da lista, adiciona a posição i na lista pos_maior.
+
+#if v == menor: → se o valor atual for igual ao menor da lista, adiciona a posição i na lista pos_menor.
+
+# Assim conseguimos pegar todas as posições onde aparece o maior e o menor valor, mesmo se eles se repetirem.
+
+
+# Mostrar resultados
+#print(f"\nVocê digitou os valores: {numeros}")
+#print(f"O maior valor foi {maior} nas posições: {pos_maior}")
+#print(f"O menor valor foi {menor} nas posições: {pos_menor}")
+ 
+                                           # Explicação final:
+
+#\n no começo da string é para pular uma linha e deixar a saída mais organizada.
+
+#Mostramos a lista completa digitada.
+
+#Mostramos o maior e o menor valor.
+
+#Mostramos em quais posições da lista eles aparecem.
+
+                                    
+                                    # Exemplo prático:
+#Se o usuário digitar:
+
+
+#Digite o 1º valor: 5
+#Digite o 2º valor: 2
+#Digite o 3º valor: 9
+#Digite o 4º valor: 2
+#Digite o 5º valor: 9
+ 
+ #A saída será:
+
+
+#Você digitou os valores: [5, 2, 9, 2, 9]
+#O maior valor foi 9 nas posições: [2, 4]
+#O menor valor foi 2 nas posições: [1, 3]
+
+
 
 
 
