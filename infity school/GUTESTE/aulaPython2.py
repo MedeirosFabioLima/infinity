@@ -5,44 +5,46 @@
 #e "morango". Em seguida, imprima o conjunto. morango". Em seguida, imprima o conjunto.
 
 
-frutas = set()
-frutas.add("Maçã")
-frutas.add("Uva")
-frutas.add("Laranja")
-frutas.add("banana")
-print(frutas)
+# frutas = set()
+# frutas.add("Maçã")
+# frutas.add("Uva")
+# frutas.add("Laranja")
+# frutas.add("banana")
+# print(frutas)
 
 
 #ATIVIDADE PRÁTICA 2 
 
 #Verifique se a fruta "banana" está presente no conjuntofrutas e imprima o resultado.
 
-if 'banana' in frutas:
-    print("A fruta banana está no conjunto de frutas")
+# if 'banana' in frutas:
+#     print("A fruta banana está no conjunto de frutas")
 
 
 #ATIVIDADE PRÁTICA 3
 
 #Crie um conjunto chamado frutas_vermelhas e adicioneas seguintes frutas a ele:"morango", "cereja" e "framboesa". Em #seguida, imprima o conjunto.
 
-frutas_vermelhas = set()
-novas_frutas = {"Morango","Cereja","Framboesa"}
-frutas_vermelhas.update(novas_frutas)
-print(frutas_vermelhas)
+# frutas_vermelhas = set()
+# novas_frutas = {"Morango","Cereja","Framboesa"}
+# frutas_vermelhas.update(novas_frutas)
+# print(frutas_vermelhas)
 
 
 #ATIVIDADE PRÁTICA 4
 
 #Remova a fruta "cereja" do conjunto frutas_vermelhas e imprima o conjunto atualizado.
 
-frutas_vermelhas.remove("Cereja")
-print(frutas_vermelhas)
+# frutas_vermelhas.remove("Cereja")
+# print(frutas_vermelhas)
 
 
 
 #ATIVIDADE PRÁTICA 5
 
 #Crie dois conjuntos, A e B, e realize a união dos dois conjuntos.
+
+
 
 
 
@@ -55,6 +57,34 @@ print(frutas_vermelhas)
 #ATIVIDADE PRÁTICA 7
 
 #Escreva um programa que receba duas listas e calcule a união dos elementos únicos dessas listas, usando conjuntos.
+
+lista1 = []
+lista2 = []
+
+for i in range(2):
+    valor1 = int(input("Digite o valor que vai pra lista 1: "))
+    lista1.append(valor1)
+    valor2 = int(input("Digite o valor que vai ser adicionado na lista 2: "))
+    lista2.append(valor2)
+
+conjunto1 = set(lista1)
+conjunto2 = set(lista2)
+
+uniao = conjunto1.union(conjunto2)
+
+soma =0
+for i in uniao:
+    soma+=i
+print(soma)
+
+
+
+# dicionario = {}
+# lista = ["nome", "idade","cidade"]
+# for chave in lista:
+#     dicionario[chave] = input(f"Digite o valor que vai ficar linkado a chave {chave}")
+# print(dicionario)
+
 
 
 
