@@ -25,10 +25,18 @@ if 'banana' in frutas:
 
 #Crie um conjunto chamado frutas_vermelhas e adicioneas seguintes frutas a ele:"morango", "cereja" e "framboesa". Em #seguida, imprima o conjunto.
 
+frutas_vermelhas = set()
+novas_frutas = {"Morango","Cereja","Framboesa"}
+frutas_vermelhas.update(novas_frutas)
+print(frutas_vermelhas)
+
 
 #ATIVIDADE PRÁTICA 4
 
 #Remova a fruta "cereja" do conjunto frutas_vermelhas e imprima o conjunto atualizado.
+
+frutas_vermelhas.remove("Cereja")
+print(frutas_vermelhas)
 
 
 
